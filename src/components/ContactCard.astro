@@ -1,0 +1,60 @@
+---
+const mapLink = `http://www.google.com/maps/place/22.480209536711907,88.29539127932046`;
+---
+
+<section
+  class="flex flex-col items-center justify-between gap-8 px-8 py-16 md:items-start bg-gradient-to-br md:bg-gradient-to-l from-slate-900 to-cyan-900 text-slate-100"
+>
+  <div
+    class="flex flex-col items-center justify-center w-full md:flex-row md:justify-end md:gap-12"
+  >
+    <div
+      class="flex flex-col items-center justify-center order-2 py-4 md:items-end md:order-1 md:flex-1"
+    >
+      <h2 class="text-3xl font-bold text-center md:text-end text-fuchsia-400">
+        Mobile
+      </h2>
+      <div class="py-2 mb-4 text-xl text-center md:text-end">
+        <div>
+          <a href="tel:+919062889772" class="hover:text-yellow-300"
+            >+91 9062889772</a
+          >
+        </div>
+        <div>
+          <a href="tel:+919674048952" class="hover:text-teal-300"
+            >+91 9674048952</a
+          >
+        </div>
+      </div>
+      <h2 class="text-3xl font-bold text-center md:text-end text-fuchsia-400">
+        Email
+      </h2>
+      <div class="py-2 mb-4 text-xl text-center md:text-end">
+        <div>
+          <a href="mailto:info@hermesadvertising.in" class="hover:text-teal-300"
+            >info@hermesadvertising.in</a
+          >
+        </div>
+        <div>
+          <a
+            href="mailto:hermesadvertising0@gmail.com"
+            class="hover:text-yellow-300">hermesadvertising0@gmail.com</a
+          >
+        </div>
+      </div>
+      <h2 class="text-3xl font-bold text-center md:text-end text-fuchsia-400">
+        Address
+      </h2>
+      <div class="py-2 text-xl text-center md:text-end">
+        <a title="Open Map Location" href={mapLink} class="hover:text-blue-400">
+          180, Satin Sen Pally Sarsuna, Kolkata-700061 INDIA
+        </a>
+      </div>
+    </div>
+    <img
+      src="/images/contact-us.jpeg"
+      alt="Hermes"
+      class="w-[400px] h-[350px] rounded-lg order-1 md:order-2"
+    />
+  </div>
+</section>

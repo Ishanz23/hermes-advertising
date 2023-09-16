@@ -1,0 +1,160 @@
+---
+import "@/styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import ContactCard from "../components/ContactCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col w-full h-full">
+    <section
+      class="flex items-center justify-center w-full bg-home-cover bg-cover p-8"
+    >
+      <div class="flex items-center h-[20vh] md:h-[30vh]">
+        <h1
+          class="text-center text-4xl md:text-5xl tracking-widest text-slate-900 font-bold opacity-80"
+        >
+          HERMES ADVERTISING
+        </h1>
+      </div>
+    </section>
+    <section
+      class="flex items-center justify-center p-8 bg-gradient-to-l from-cyan-700 to-slate-900"
+    >
+      <p class="text-lg font-bold text-slate-50 text-center tracking-wide">
+        Welcome to the Hermes Advertising Web Page. "Hermes Advertising" is an
+        Outdoor Advertising, Printing, Publicity and Branding organization.
+      </p>
+    </section>
+    <section
+      class="p-8 flex flex-col items-center md:flex-row md:items-start gap-8"
+    >
+      <div class="md:py-4">
+        <img
+          src="/images/about-us-card.jpeg"
+          alt="Hermes"
+          class="w-[350px] h-[350px] rounded-lg"
+        />
+      </div>
+      <article class="p-4">
+        <h1
+          class="text-5xl font-bold text-fuchsia-700 tracking-wide border-y-8 py-4 text-center md:text-left"
+        >
+          About Us
+        </h1>
+        <p class="py-8">
+          Hermes Advertising is an advertising, branding, printing, business
+          solutions and consulting organization. Established in Kolkata, India
+          in the year 2016.
+          <br />
+          <br />
+          <em class="font-semibold">
+            We're a dedicated creative agency. Each of our design project has to
+            be special, being as important as the end result process.
+          </em>
+          <br />
+          <br />
+          <em>
+            Our projects truly inspire, inform and interact with the targeted
+            audience!
+          </em>
+        </p>
+      </article>
+    </section>
+    <section
+      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-br from-slate-900 to-cyan-800 text-slate-50 py-16 px-8"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-end justify-center py-4 order-2 md:order-1 md:flex-1"
+        >
+          <h2
+            class="text-3xl text-center md:text-end font-bold text-fuchsia-400"
+          >
+            Mission
+          </h2>
+          <p class="py-4 text-center md:text-end">
+            Building India’s largest BTL Advertising Marketplace Leaders
+            <br />
+             in all type of BTL marketing within PAN India.
+          </p>
+        </div>
+        <img
+          src="/images/mission.jpeg"
+          alt="Hermes"
+          class="w-[400px] h-[350px] rounded-lg order-1 md:order-2"
+        />
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center justify-center flex-1 md:gap-12"
+      >
+        <img
+          src="/images/excellence.jpeg"
+          alt="Hermes"
+          class="w-[400px] h-[350px] rounded-lg"
+        />
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4"
+        >
+          <h2 class="text-3xl text-center font-bold text-fuchsia-400">
+            Our Excellence
+          </h2>
+          <p class="py-4 text-center md:text-left">
+            We have excellence in production,scripting, all media creative,
+            corporate Advertising, Printing production, Branding, Website
+            development & Advertising. With all our In-house production, we
+            deliver at promising budget.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-br from-slate-200 to-white text-slate-800 py-16 px-8"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-end justify-center py-4 order-2 md:order-1 md:flex-1"
+        >
+          <h2
+            class="text-4xl text-center md:text-end font-bold text-fuchsia-700"
+          >
+            Prints
+          </h2>
+          <p class="py-4 text-center md:text-end text-xl">
+            All types of printing used in outdoor advertising are done by our
+            own printing-house.
+          </p>
+        </div>
+        <img
+          src="/images/printing.jpeg"
+          alt="Hermes"
+          class="w-[400px] h-[350px] rounded-lg order-1 md:order-2"
+        />
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center justify-center flex-1 md:gap-12"
+      >
+        <img
+          src="/images/signage.jpeg"
+          alt="Hermes"
+          class="w-[400px] h-[350px] rounded-lg"
+        />
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4"
+        >
+          <h2 class="text-4xl text-center font-bold text-fuchsia-700">
+            Signage
+          </h2>
+          <p class="py-4 text-center md:text-left text-xl">
+            All of the signage activities used in outdoor branding are done by
+            us.
+          </p>
+        </div>
+      </div>
+    </section>
+    <ContactCard />
+  </main>
+</Layout>

@@ -1,0 +1,22 @@
+---
+import "@/styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import ContactCard from "../components/ContactCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col w-full h-full">
+    <section
+      class="flex items-center justify-center md:justify-start w-full bg-contact-cover bg-cover bg-center p-8"
+    >
+      <div class="flex items-center justify-center h-[20vh] md:h-[30vh]">
+        <h1
+          class="text-center text-6xl md:text-5xl tracking-widest text-yellow-300 font-extrabold"
+        >
+          CONTACT US
+        </h1>
+      </div>
+    </section>
+    <ContactCard />
+  </main>
+</Layout>

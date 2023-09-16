@@ -1,0 +1,236 @@
+---
+import "@/styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import ContactCard from "../components/ContactCard.astro";
+import ImageList from "../components/react/ImageList";
+
+const wallPrintingImages = [
+  "/images/wall-printing/wp-1.webp",
+  "/images/wall-printing/wp-2.webp",
+  "/images/wall-printing/wp-3.jpeg",
+  "/images/wall-printing/wp-4.webp",
+];
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="flex flex-col w-full h-full">
+    <section
+      class="flex items-center justify-start w-full bg-services-cover bg-cover bg-bottom p-8"
+    >
+      <div class="flex items-center h-[20vh] md:h-[30vh]">
+        <h1
+          class="text-center text-4xl md:text-6xl tracking-widest text-yellow-300 font-extrabold"
+        >
+          SERVICES
+        </h1>
+      </div>
+    </section>
+    <section
+      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-b from-slate-900 to-cyan-800 text-slate-50 py-16 px-8"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4 order-1 md:order-2 md:flex-1"
+        >
+          <h2
+            class="text-3xl text-center md:text-start font-bold text-fuchsia-400"
+          >
+            Solvent Flex Print
+          </h2>
+          <p class="py-4 text-center md:text-start">
+            Flex, Vinyl, front-lit, back-lit printing
+          </p>
+        </div>
+        <img
+          src="/images/solvent-flex-print.webp"
+          alt="Hermes"
+          class="w-[400px] h-[250px] rounded-lg order-2 md:order-1"
+        />
+      </div>
+    </section>
+    <section
+      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-t from-slate-100 to-cyan-200 text-slate-50 py-16 px-8"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-end justify-center py-4 order-2 md:order-1 md:flex-1"
+        >
+          <h2
+            class="text-3xl text-center md:text-end font-bold text-fuchsia-600"
+          >
+            Eco Solvent Print
+          </h2>
+          <p class="py-4 text-center md:text-end text-slate-800">
+            All Type of Media Printed By ECO Solvent Ink.
+          </p>
+        </div>
+        <img
+          src="/images/eco-solvent-print.webp"
+          alt="Hermes"
+          class="w-[400px] h-[250px] rounded-lg order-1 md:order-2"
+        />
+      </div>
+    </section>
+    <section
+      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-br from-slate-900 to-cyan-800 text-slate-50 py-16 px-8"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4 order-1 md:order-2 md:flex-1"
+        >
+          <h2
+            class="text-3xl text-center md:text-start font-bold text-fuchsia-400"
+          >
+            Digital Paper Print
+          </h2>
+          <p class="py-4 text-center md:text-start">
+            All Type of Paper printing, 90GSM to 350GSM Paper Digitaly Printing.
+          </p>
+        </div>
+        <img
+          src="/images/digital-paper-print.webp"
+          alt="Hermes"
+          class="w-[400px] h-[250px] rounded-lg order-2 md:order-1"
+        />
+      </div>
+    </section>
+    <section class="flex flex-col items-center gap-8 py-12 bg-slate-50">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-700">
+        Wall Paintings for Advertising
+      </h1>
+      <div class="caraousel">
+        <ImageList images={wallPrintingImages} />
+      </div>
+    </section>
+    <section class="flex flex-col items-center gap-8 py-12 bg-slate-800">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-50">
+        ACP Board with Acrylic Letter & LED Light
+      </h1>
+      <div class="caraousel">
+        <ImageList images={wallPrintingImages} />
+      </div>
+    </section>
+    <section class="flex flex-col items-center gap-8 py-12 bg-slate-50">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-700">
+        Our Others Activities
+      </h1>
+      <div class="caraousel">
+        <ImageList images={wallPrintingImages} />
+      </div>
+    </section>
+    <section class="flex flex-col items-center gap-8 py-12 bg-slate-800">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-50">
+        Glow Sign Board
+      </h1>
+      <div class="caraousel">
+        <ImageList images={wallPrintingImages} />
+      </div>
+    </section>
+    <section class="flex flex-col items-center gap-8 py-12 bg-slate-50">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-700">
+        Inshop Branding
+      </h1>
+      <div class="caraousel">
+        <ImageList images={wallPrintingImages} />
+      </div>
+    </section>
+    <section
+      class="flex flex-col lg:flex-row items-center md:items-start justify-between gap-8 bg-gradient-to-b md:bg-gradient-to-br from-slate-900 to-cyan-900 text-slate-50 py-16 px-8"
+    >
+      <div
+        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4"
+        >
+          <h2
+            class="text-lg text-center md:text-start font-bold text-yellow-300"
+          >
+            Our Flex Printing
+          </h2>
+        </div>
+        <div class="yt">
+          <iframe
+            class="w-[200px] h-[250px] rounded-lg"
+            sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals"
+            frameborder="0"
+            aria-label="YouTube Video, February 22, 2023"
+            src="https://www.youtube.com/embed/TEzDYySTRTM"
+            allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4"
+        >
+          <h2
+            class="text-lg text-center md:text-start font-bold text-yellow-300"
+          >
+            Our Vinyl Printing
+          </h2>
+        </div>
+        <div class="yt">
+          <iframe
+            class="w-[200px] h-[250px] rounded-lg"
+            src="https://www.youtube.com/embed/VwETjshO1jg"
+            title="Vinyl printing Hermes advertising"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4"
+        >
+          <h2
+            class="text-lg text-center md:text-start font-bold text-yellow-300"
+          >
+            300 gsm Digital Paper Printing
+          </h2>
+        </div>
+        <div class="yt">
+          <iframe
+            class="w-[200px] h-[250px] rounded-lg"
+            src="https://www.youtube.com/embed/0RFCYFxZSpc"
+            title="February 20, 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+      >
+        <div
+          class="flex flex-col items-center md:items-start justify-center py-4"
+        >
+          <h2
+            class="text-lg text-center md:text-start font-bold text-yellow-300"
+          >
+            Our Digital Printing
+          </h2>
+        </div>
+        <div class="yt">
+          <iframe
+            class="w-[200px] h-[250px] rounded-lg"
+            src="https://www.youtube.com/embed/PwwPHBBQAEU"
+            title="Digital Printing service in kolkata| Hermes Advertising Available on IndiaMART/ Mob 9062889772"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <ContactCard />
+  </main>
+</Layout>
