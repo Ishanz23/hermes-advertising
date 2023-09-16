@@ -17,9 +17,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "home-cover": "url('/images/cover.jpg')",
-        "services-cover": "url('/images/services-cover.jpeg')",
-        "contact-cover": "url('/images/contact-cover.jpeg')",
+        "home-cover": "url('/src/assets/images/cover.jpg')",
+        "services-cover": "url('/src/assets/images/services-cover.jpeg')",
+        "contact-cover": "url('/src/assets/images/contact-cover.jpeg')",
       },
       colors: {
         border: "hsl(var(--border))",

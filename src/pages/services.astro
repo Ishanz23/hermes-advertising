@@ -2,40 +2,43 @@
 import "@/styles/globals.css";
 import Layout from "../layouts/Layout.astro";
 import ContactCard from "../components/ContactCard.astro";
-import ImageList from "../components/react/ImageList";
+import ImageList from "../components/ImageList.astro";
+import SolventFlexPrintImage from "../assets/images/solvent-flex-print.webp";
+import EcoSolventPrintImage from "../assets/images/eco-solvent-print.webp";
+import DigitalPaperPrintImage from "../assets/images/digital-paper-print.webp";
+import WPImage1 from "../assets/images/wall-printing/wp-1.webp";
+import WPImage2 from "../assets/images/wall-printing/wp-2.webp";
+import WPImage3 from "../assets/images/wall-printing/wp-3.jpeg";
+import WPImage4 from "../assets/images/wall-printing/wp-4.webp";
+import { Image } from "astro:assets";
 
-const wallPrintingImages = [
-  "/images/wall-printing/wp-1.webp",
-  "/images/wall-printing/wp-2.webp",
-  "/images/wall-printing/wp-3.jpeg",
-  "/images/wall-printing/wp-4.webp",
-];
+const wallPrintingImages = [WPImage1, WPImage2, WPImage3, WPImage4];
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="flex flex-col w-full h-full">
     <section
-      class="flex items-center justify-start w-full bg-services-cover bg-cover bg-bottom p-8"
+      class="flex items-center justify-start w-full p-8 bg-bottom bg-cover bg-services-cover"
     >
       <div class="flex items-center h-[20vh] md:h-[30vh]">
         <h1
-          class="text-center text-4xl md:text-6xl tracking-widest text-yellow-300 font-extrabold"
+          class="text-4xl font-extrabold tracking-widest text-center text-yellow-300 md:text-6xl"
         >
           SERVICES
         </h1>
       </div>
     </section>
     <section
-      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-b from-slate-900 to-cyan-800 text-slate-50 py-16 px-8"
+      class="flex flex-col items-center justify-between gap-8 px-8 py-16 md:items-start bg-gradient-to-br md:bg-gradient-to-b from-slate-900 to-cyan-800 text-slate-50"
     >
       <div
-        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+        class="flex flex-col items-center justify-center w-full md:flex-row md:justify-end md:gap-12"
       >
         <div
-          class="flex flex-col items-center md:items-start justify-center py-4 order-1 md:order-2 md:flex-1"
+          class="flex flex-col items-center justify-center order-1 py-4 md:items-start md:order-2 md:flex-1"
         >
           <h2
-            class="text-3xl text-center md:text-start font-bold text-fuchsia-400"
+            class="text-3xl font-bold text-center md:text-start text-fuchsia-400"
           >
             Solvent Flex Print
           </h2>
@@ -43,24 +46,25 @@ const wallPrintingImages = [
             Flex, Vinyl, front-lit, back-lit printing
           </p>
         </div>
-        <img
-          src="/images/solvent-flex-print.webp"
-          alt="Hermes"
+        <Image
+          src={SolventFlexPrintImage}
+          alt={"Solvent Flex Print"}
+          loading={"lazy"}
           class="w-[400px] h-[250px] rounded-lg order-2 md:order-1"
         />
       </div>
     </section>
     <section
-      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-t from-slate-100 to-cyan-200 text-slate-50 py-16 px-8"
+      class="flex flex-col items-center justify-between gap-8 px-8 py-16 md:items-start bg-gradient-to-br md:bg-gradient-to-t from-slate-100 to-cyan-200 text-slate-50"
     >
       <div
-        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+        class="flex flex-col items-center justify-center w-full md:flex-row md:justify-end md:gap-12"
       >
         <div
-          class="flex flex-col items-center md:items-end justify-center py-4 order-2 md:order-1 md:flex-1"
+          class="flex flex-col items-center justify-center order-2 py-4 md:items-end md:order-1 md:flex-1"
         >
           <h2
-            class="text-3xl text-center md:text-end font-bold text-fuchsia-600"
+            class="text-3xl font-bold text-center md:text-end text-fuchsia-600"
           >
             Eco Solvent Print
           </h2>
@@ -68,24 +72,25 @@ const wallPrintingImages = [
             All Type of Media Printed By ECO Solvent Ink.
           </p>
         </div>
-        <img
-          src="/images/eco-solvent-print.webp"
-          alt="Hermes"
+        <Image
+          src={EcoSolventPrintImage}
+          alt={"Eco Solvent Print"}
+          loading={"lazy"}
           class="w-[400px] h-[250px] rounded-lg order-1 md:order-2"
         />
       </div>
     </section>
     <section
-      class="flex flex-col items-center md:items-start justify-between gap-8 bg-gradient-to-br md:bg-gradient-to-br from-slate-900 to-cyan-800 text-slate-50 py-16 px-8"
+      class="flex flex-col items-center justify-between gap-8 px-8 py-16 md:items-start bg-gradient-to-br md:bg-gradient-to-br from-slate-900 to-cyan-800 text-slate-50"
     >
       <div
-        class="flex flex-col md:flex-row items-center justify-center md:justify-end md:gap-12 w-full"
+        class="flex flex-col items-center justify-center w-full md:flex-row md:justify-end md:gap-12"
       >
         <div
-          class="flex flex-col items-center md:items-start justify-center py-4 order-1 md:order-2 md:flex-1"
+          class="flex flex-col items-center justify-center order-1 py-4 md:items-start md:order-2 md:flex-1"
         >
           <h2
-            class="text-3xl text-center md:text-start font-bold text-fuchsia-400"
+            class="text-3xl font-bold text-center md:text-start text-fuchsia-400"
           >
             Digital Paper Print
           </h2>
@@ -93,64 +98,55 @@ const wallPrintingImages = [
             All Type of Paper printing, 90GSM to 350GSM Paper Digitaly Printing.
           </p>
         </div>
-        <img
-          src="/images/digital-paper-print.webp"
-          alt="Hermes"
+        <Image
+          src={DigitalPaperPrintImage}
+          alt={"Digital Paper Print"}
+          loading={"lazy"}
           class="w-[400px] h-[250px] rounded-lg order-2 md:order-1"
         />
       </div>
     </section>
     <section class="flex flex-col items-center gap-8 py-12 bg-slate-50">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-700">
+      <h1 class="text-3xl font-bold text-center md:text-4xl text-slate-700">
         Wall Paintings for Advertising
       </h1>
-      <div class="caraousel">
-        <ImageList images={wallPrintingImages} />
-      </div>
+      <ImageList images={wallPrintingImages} />
     </section>
     <section class="flex flex-col items-center gap-8 py-12 bg-slate-800">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-50">
+      <h1 class="text-3xl font-bold text-center md:text-4xl text-slate-50">
         ACP Board with Acrylic Letter & LED Light
       </h1>
-      <div class="caraousel">
-        <ImageList images={wallPrintingImages} />
-      </div>
+      <ImageList images={wallPrintingImages} />
     </section>
     <section class="flex flex-col items-center gap-8 py-12 bg-slate-50">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-700">
+      <h1 class="text-3xl font-bold text-center md:text-4xl text-slate-700">
         Our Others Activities
       </h1>
-      <div class="caraousel">
-        <ImageList images={wallPrintingImages} />
-      </div>
+      <ImageList images={wallPrintingImages} />
     </section>
     <section class="flex flex-col items-center gap-8 py-12 bg-slate-800">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-50">
+      <h1 class="text-3xl font-bold text-center md:text-4xl text-slate-50">
         Glow Sign Board
       </h1>
-      <div class="caraousel">
-        <ImageList images={wallPrintingImages} />
-      </div>
+      <ImageList images={wallPrintingImages} />
     </section>
     <section class="flex flex-col items-center gap-8 py-12 bg-slate-50">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-slate-700">
+      <h1 class="text-3xl font-bold text-center md:text-4xl text-slate-700">
         Inshop Branding
       </h1>
-      <div class="caraousel">
-        <ImageList images={wallPrintingImages} />
-      </div>
+      <ImageList images={wallPrintingImages} />
     </section>
     <section
-      class="flex flex-col lg:flex-row items-center md:items-start justify-between gap-8 bg-gradient-to-b md:bg-gradient-to-br from-slate-900 to-cyan-900 text-slate-50 py-16 px-8"
+      class="flex flex-col items-center justify-between gap-8 px-8 py-16 lg:flex-row md:items-start bg-gradient-to-b md:bg-gradient-to-br from-slate-900 to-cyan-900 text-slate-50"
     >
       <div
-        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+        class="flex flex-col items-center justify-center w-full md:justify-center md:gap-2"
       >
         <div
-          class="flex flex-col items-center md:items-start justify-center py-4"
+          class="flex flex-col items-center justify-center py-4 md:items-start"
         >
           <h2
-            class="text-lg text-center md:text-start font-bold text-yellow-300"
+            class="text-lg font-bold text-center text-yellow-300 md:text-start"
           >
             Our Flex Printing
           </h2>
@@ -166,13 +162,13 @@ const wallPrintingImages = [
         </div>
       </div>
       <div
-        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+        class="flex flex-col items-center justify-center w-full md:justify-center md:gap-2"
       >
         <div
-          class="flex flex-col items-center md:items-start justify-center py-4"
+          class="flex flex-col items-center justify-center py-4 md:items-start"
         >
           <h2
-            class="text-lg text-center md:text-start font-bold text-yellow-300"
+            class="text-lg font-bold text-center text-yellow-300 md:text-start"
           >
             Our Vinyl Printing
           </h2>
@@ -187,13 +183,13 @@ const wallPrintingImages = [
         </div>
       </div>
       <div
-        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+        class="flex flex-col items-center justify-center w-full md:justify-center md:gap-2"
       >
         <div
-          class="flex flex-col items-center md:items-start justify-center py-4"
+          class="flex flex-col items-center justify-center py-4 md:items-start"
         >
           <h2
-            class="text-lg text-center md:text-start font-bold text-yellow-300"
+            class="text-lg font-bold text-center text-yellow-300 md:text-start"
           >
             300 gsm Digital Paper Printing
           </h2>
@@ -209,13 +205,13 @@ const wallPrintingImages = [
         </div>
       </div>
       <div
-        class="flex flex-col items-center justify-center md:justify-center md:gap-2 w-full"
+        class="flex flex-col items-center justify-center w-full md:justify-center md:gap-2"
       >
         <div
-          class="flex flex-col items-center md:items-start justify-center py-4"
+          class="flex flex-col items-center justify-center py-4 md:items-start"
         >
           <h2
-            class="text-lg text-center md:text-start font-bold text-yellow-300"
+            class="text-lg font-bold text-center text-yellow-300 md:text-start"
           >
             Our Digital Printing
           </h2>

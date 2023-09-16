@@ -1,7 +1,13 @@
 ---
 import "@/styles/globals.css";
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import ContactCard from "../components/ContactCard.astro";
+import AboutUsImage from "../assets/images/about-us-card.jpeg";
+import MissionImage from "../assets/images/mission.jpeg";
+import ExcellenceImage from "../assets/images/excellence.jpeg";
+import PrintingImage from "../assets/images/printing.jpeg";
+import SignageImage from "../assets/images/signage.jpeg";
 ---
 
 <Layout title="Welcome to Hermes Advertising.">
@@ -29,9 +35,10 @@ import ContactCard from "../components/ContactCard.astro";
       class="flex flex-col items-center gap-8 p-8 md:flex-row md:items-start"
     >
       <div class="md:py-4">
-        <img
-          src="/images/about-us-card.jpeg"
-          alt="Hermes"
+        <Image
+          src={AboutUsImage}
+          alt={"About Hermes Advertising"}
+          loading={"lazy"}
           class="w-[350px] h-[350px] rounded-lg"
         />
       </div>
@@ -80,18 +87,20 @@ import ContactCard from "../components/ContactCard.astro";
              in all type of BTL marketing within PAN India.
           </p>
         </div>
-        <img
-          src="/images/mission.jpeg"
-          alt="Hermes"
+        <Image
+          src={MissionImage}
+          alt={"Mission of Hermes Advertising"}
+          loading={"lazy"}
           class="w-[400px] h-[350px] rounded-lg order-1 md:order-2"
         />
       </div>
       <div
         class="flex flex-col items-center justify-center flex-1 md:flex-row md:gap-12"
       >
-        <img
-          src="/images/excellence.jpeg"
-          alt="Hermes"
+        <Image
+          src={ExcellenceImage}
+          alt={"Excellence of Hermes Advertising"}
+          loading={"lazy"}
           class="w-[400px] h-[350px] rounded-lg"
         />
         <div
@@ -128,18 +137,20 @@ import ContactCard from "../components/ContactCard.astro";
             own printing-house.
           </p>
         </div>
-        <img
-          src="/images/printing.jpeg"
-          alt="Hermes"
+        <Image
+          src={PrintingImage}
+          alt={"Printing stuffs"}
+          loading={"lazy"}
           class="w-[400px] h-[350px] rounded-lg order-1 md:order-2"
         />
       </div>
       <div
         class="flex flex-col items-center justify-center flex-1 md:flex-row md:gap-12"
       >
-        <img
-          src="/images/signage.jpeg"
-          alt="Hermes"
+        <Image
+          src={SignageImage}
+          alt={"Printing Signage | Hermes Advertising"}
+          loading={"lazy"}
           class="w-[400px] h-[350px] rounded-lg"
         />
         <div

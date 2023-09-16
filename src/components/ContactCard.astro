@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import ContactUsImage from "../assets/images/contact-us.jpeg";
 const mapLink = `http://www.google.com/maps/place/22.480209536711907,88.29539127932046`;
 ---
 
@@ -51,10 +53,11 @@ const mapLink = `http://www.google.com/maps/place/22.480209536711907,88.29539127
         </a>
       </div>
     </div>
-    <img
-      src="/images/contact-us.jpeg"
-      alt="Hermes"
-      class="w-[400px] h-[350px] rounded-lg order-1 md:order-2"
+    <Image
+      src={ContactUsImage}
+      alt={"Contact Hermes Advertising"}
+      loading={"lazy"}
+      class="w-[400px] h-[350px] order-1 rounded-lg md:order-2"
     />
   </div>
 </section>
