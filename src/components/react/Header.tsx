@@ -27,20 +27,20 @@ export default function Header() {
           </li>
           <li className="flex items-center gap-2 cursor-pointer hover:text-fuchsia-400 dark:hover:text-fuchsia-300">
             <Input className="" placeholder="Search" />
-            <Button className="bg-slate-700 flex items-center">
+            <Button className="flex items-center bg-slate-700">
               <span className="material-symbols-outlined">search</span>
             </Button>
           </li>
         </ul>
         <div
-          className="flex flex-col justify-between items-center absolute right-4 cursor-pointer w-7 h-5 md:hidden"
+          className="absolute flex flex-col items-center justify-between h-5 cursor-pointer right-4 w-7 md:hidden"
           onClick={() => setMenuVisibility(!menuVisible)}
         >
-          <a className="w-full h-full">
+          <button className="w-full h-full">
             <div className="absolute h-0.5 w-full top-0 transition-all origin-left-center rounded-lg bg-slate-100 opacity-100"></div>
             <div className="absolute h-0.5 w-full top-2 transition-all origin-left-center rounded-lg bg-slate-100 opacity-100"></div>
             <div className="absolute h-0.5 w-full top-4 transition-all origin-left-center rounded-lg bg-slate-100 opacity-100"></div>
-          </a>
+          </button>
         </div>
       </nav>
     </header>
